@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+* a {
+  color: black;
+}
+
+body {
+  /* for Container */
+}
+
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Nav header for Desktop */
+}
+
+body header .nav-header-desktop {
+  /* Width 90% for container effect */
+  width: 90%;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+  /* Search div */
+  /* Styling logo */
+  /* Last div */
+}
+
+body header .nav-header-desktop .search {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /* Aligning items inside button */
+}
+
+body header .nav-header-desktop .search button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Span Search */
+  /* Sizing image */
+}
+
+body header .nav-header-desktop .search button :nth-child(2) {
+  opacity: 0.8;
+  font-size: 11px;
+  margin-left: 0.4rem;
+}
+
+body header .nav-header-desktop .search button img {
+  width: 20px;
+}
+
+body header .nav-header-desktop .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+}
+
+body header .nav-header-desktop .logo img {
+  width: 130px;
+}
+
+body header .nav-header-desktop .last-component {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  opacity: 0.9;
+  /* Account span */
+  /* Cart div */
+}
+
+body header .nav-header-desktop .last-component :nth-child(1) {
+  margin-right: 0.6rem;
+}
+
+body header .nav-header-desktop .last-component div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav-header-desktop .last-component div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav-header-desktop .last-component div a img {
+  width: 20px;
+}
+
+body header .nav-footer-desktop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  z-index: 99;
+  background-color: white;
+  display: none;
+}
+
+body header .nav-footer-desktop ul {
+  padding: 1.7rem 0 1.7rem;
+  width: 60%;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-footer-desktop ul .dropdown button {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+body header .nav-footer-desktop ul .dropdown button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav-footer-desktop ul .dropdown button a img {
+  margin-left: 4px;
+  width: 11px;
+  opacity: 0.7;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content {
+  overflow: hidden;
+  padding-top: 2rem;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .lists {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 12px;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .lists ul {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .lists ul li {
+  margin-top: 0.3rem;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .lists ul li:hover {
+  opacity: 0.7;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .image-container {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .image-container div {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body header .nav-footer-desktop ul .dropdown .dropdown-content .content-container .image-container div span {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+body header .nav-footer-desktop ul .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .nav-mobile {
+  width: 94%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .nav-mobile img {
+  width: 20px;
+}
+
+body header .nav-mobile .first-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .nav-mobile .first-component .search {
+  margin-left: 10px;
+}
+
+body header .nav-mobile .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+body header .nav-mobile .logo img {
+  width: 100%;
+}
+
+body header .nav-mobile .last-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 40%;
+}
+
+body header .nav-mobile .last-component :nth-child(1) {
+  margin-right: 10px;
+}
+
+body header .nav-mobile #menuToggle {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+body header .nav-mobile #menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body header .nav-mobile #menuToggle a:hover {
+  color: tomato;
+}
+
+body header .nav-mobile #menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+body header .nav-mobile #menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #494848;
+}
+
+body header .nav-mobile #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+body header .nav-mobile #menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+body header .nav-mobile #menuToggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+body header .nav-mobile #menuToggle .span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #2c2b2b;
+  opacity: 0.8;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+body header .nav-mobile #menuToggle .span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+body header .nav-mobile #menuToggle .span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+body header .nav-mobile #menu {
+  position: absolute;
+  width: 300px;
+  min-height: 300px;
+  height: auto;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+body header .nav-mobile #menu li {
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+body header .nav-mobile #menu .shop {
+  position: relative;
+  width: 50px;
+}
+
+body header .nav-mobile #menu .shop .shop-submenu {
+  display: none;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(0, 0%);
+          transform: translate(0, 0%);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  position: absolute;
+  margin-left: 20px;
+}
+
+body header .nav-mobile #menu .shop:hover {
+  width: auto;
+  height: 490px;
+}
+
+body header .nav-mobile #menu .shop:hover .shop-submenu {
+  margin-top: 0.6rem;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
